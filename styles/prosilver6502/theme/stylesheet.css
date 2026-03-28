@@ -1,0 +1,553 @@
+/* 6502.org Forum Theme - extends prosilver */
+@import url("../../prosilver/theme/stylesheet.css");
+
+/* Hide redundant small unread icon next to topic titles */
+.topiclist a.unread {
+	display: none;
+}
+
+/* Code block: styled to match quote block */
+.codebox {
+	border: 1px solid #A9B8C2;
+}
+
+.codebox p {
+	background-color: #A9B8C2;
+	color: #333333;
+	padding: 4px 8px;
+	font-size: 0.85em;
+	font-weight: bold;
+	border-bottom: none;
+	display: flex;
+	justify-content: space-between;
+}
+
+.codebox p a,
+.codebox p a:hover,
+.codebox p a:active,
+.codebox p a:focus {
+	text-decoration: none;
+}
+
+.codebox code {
+	color: #000000;
+	font-weight: 300;
+	max-height: none;
+	overflow: visible;
+}
+
+/* Hide attachment paperclip icon in topic lists */
+.topiclist .fa-paperclip {
+	display: none;
+}
+
+/* Unread icon color: orange instead of prosilver's red */
+.icon.icon-red, a:hover .icon.icon-red {
+	color: #D98316;
+}
+
+/* Unread status images: orange versions */
+.forum_unread					{ background-image: url("./images/forum_unread.gif"); }
+.forum_unread_locked				{ background-image: url("./images/forum_unread_locked.gif"); }
+.forum_unread_subforum				{ background-image: url("./images/forum_unread_subforum.gif"); }
+.topic_unread					{ background-image: url("./images/topic_unread.gif"); }
+.topic_unread_mine				{ background-image: url("./images/topic_unread_mine.gif"); }
+.topic_unread_hot				{ background-image: url("./images/topic_unread_hot.gif"); }
+.topic_unread_hot_mine				{ background-image: url("./images/topic_unread_hot_mine.gif"); }
+.topic_unread_locked				{ background-image: url("./images/topic_unread_locked.gif"); }
+.topic_unread_locked_mine			{ background-image: url("./images/topic_unread_locked_mine.gif"); }
+.announce_unread				{ background-image: url("./images/announce_unread.gif"); }
+.announce_unread_mine				{ background-image: url("./images/announce_unread_mine.gif"); }
+.announce_unread_locked				{ background-image: url("./images/announce_unread_locked.gif"); }
+.announce_unread_locked_mine			{ background-image: url("./images/announce_unread_locked_mine.gif"); }
+.global_unread					{ background-image: url("./images/announce_unread.gif"); }
+.global_unread_mine				{ background-image: url("./images/announce_unread_mine.gif"); }
+.global_unread_locked				{ background-image: url("./images/announce_unread_locked.gif"); }
+.global_unread_locked_mine			{ background-image: url("./images/announce_unread_locked_mine.gif"); }
+.sticky_unread					{ background-image: url("./images/sticky_unread.gif"); }
+.sticky_unread_mine				{ background-image: url("./images/sticky_unread_mine.gif"); }
+.sticky_unread_locked				{ background-image: url("./images/sticky_unread_locked.gif"); }
+.sticky_unread_locked_mine			{ background-image: url("./images/sticky_unread_locked_mine.gif"); }
+
+/* === 6502.org Site Header === */
+.site-header {
+	background: linear-gradient(135deg, #1e4f7a 0%, #2a6099 50%, #3574b4 100%);
+	padding: 16px 20px;
+	display: flex;
+	align-items: center;
+	gap: 16px;
+	box-shadow: 0 2px 8px rgba(0,0,0,0.12);
+	position: relative;
+	z-index: 10;
+}
+
+.site-header a {
+	color: #ffffff;
+	text-decoration: none;
+	display: flex;
+	align-items: flex-start;
+	gap: 14px;
+}
+
+.site-header a:hover {
+	text-decoration: none;
+	color: #ffffff;
+}
+
+.site-icon {
+	width: 48px;
+	height: 48px;
+	image-rendering: pixelated;
+	image-rendering: crisp-edges;
+	display: block;
+	margin-top: 2px;
+}
+
+.site-title-group {
+	display: flex;
+	flex-direction: column;
+}
+
+.site-header .site-title {
+	color: #ffffff;
+	font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Verdana, Helvetica, Arial, sans-serif;
+	font-size: 26px;
+	font-weight: 600;
+	letter-spacing: -0.01em;
+	line-height: 1.1;
+}
+
+.site-header .site-subtitle {
+	color: #ffffff;
+	font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Verdana, Helvetica, Arial, sans-serif;
+	font-size: 14px;
+	font-weight: 400;
+	opacity: 0.8;
+	margin-top: 2px;
+}
+
+/* === 6502.org Site Navigation === */
+.site-nav {
+	display: flex;
+	align-items: center;
+	padding: 0 20px;
+	background-color: #ffffff;
+	border-bottom: 1px solid #d5d9df;
+	font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Verdana, Helvetica, Arial, sans-serif;
+	-webkit-font-smoothing: antialiased;
+	font-size: 14px;
+}
+
+.site-nav .nav-title {
+	font-weight: 600;
+	font-size: 14px;
+	padding: 10px 0;
+	margin-right: auto;
+	color: #2d3748;
+}
+
+.site-nav .nav-links {
+	display: flex;
+	gap: 2px;
+}
+
+.site-nav .nav-links a {
+	padding: 10px 14px;
+	white-space: nowrap;
+	font-size: 14px;
+	font-weight: 500;
+	color: #2d3748;
+	text-decoration: none;
+	border-radius: 6px;
+}
+
+.site-nav .nav-links a:hover {
+	background-color: #f0f5fa;
+	color: #2a6099;
+	text-decoration: none;
+}
+
+.site-nav .nav-links a.nav-active {
+	background-color: #e8f0f8;
+	color: #2a6099;
+}
+
+/* === 6502.org Site Footer === */
+.site-footer {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	gap: 12px;
+	font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Verdana, Helvetica, Arial, sans-serif;
+	font-size: 13px;
+	color: #4a5261;
+	padding: 20px;
+	border-top: 1px solid #d5d9df;
+	background-color: #ffffff;
+	margin-top: 10px;
+}
+
+.site-footer a {
+	text-decoration: underline;
+	font-size: 13px;
+	color: #4a5261;
+}
+
+.site-footer a:hover {
+	color: #2a6099;
+}
+
+/* === Hide prosilver's default headerbar (we use our own header) === */
+.headerbar {
+	display: none;
+}
+
+/* === Hide prosilver's default copyright footer (we use our own) === */
+.copyright .footer-copyright {
+	display: none;
+}
+
+/* === View-profile avatar === */
+.profile-avatar img {
+	width: 200px !important;
+	height: auto !important;
+}
+
+/* === Post profile styling === */
+.postprofile .avatar img {
+	width: 120px !important;
+	height: auto !important;
+	max-width: 100%;
+}
+
+.postprofile dd,
+.postprofile dt {
+	font-size: 1.08em;
+}
+
+/* === Post profile on the left side === */
+/* Float and border are set via inline style in the templates
+   (viewtopic_body.html, ucp_pm_viewmessage.html) because
+   prosilver's base .postprofile rules cannot be overridden
+   with CSS alone. */
+
+.postbody {
+	margin-left: 0;
+	margin-right: 0;
+	padding-left: 8px;
+}
+
+/* Remove online indicator from the post container */
+.online {
+	background-image: none !important;
+}
+
+/* Put it on the profile pane instead */
+.online .postprofile {
+	background-image: url("../../prosilver/theme/en/icon_user_online.gif");
+	background-position: right 0;
+	background-repeat: no-repeat;
+}
+
+/* === Quote block: subsilver-style === */
+.ss-quote {
+	border: 1px solid #A9B8C2;
+	margin: 10px 5px;
+}
+
+.ss-quote-header {
+	background-color: #A9B8C2;
+	color: #333333;
+	padding: 4px 8px;
+	font-size: 0.85em;
+	font-weight: bold;
+}
+
+.ss-quote-body {
+	background-color: #ffffff;
+	padding: 5px 8px;
+	color: #4B5C77;
+	font-weight: normal;
+}
+
+/* === Separators between action-bar rightside links === */
+.action-bar .mark-read.rightside + .mark-read.rightside:after {
+	content: " \2022 ";
+	padding: 0 2px;
+}
+
+/* === Prevent underline on visited action-bar links === */
+.action-bar a,
+.action-bar a:link,
+.action-bar a:visited,
+.action-bar a:hover,
+.action-bar a:active {
+	text-decoration: none !important;
+}
+
+/* === Profile annotation links === */
+
+a.ss-memoriam,
+a.ss-memoriam:link,
+a.ss-memoriam:visited {
+	text-decoration: none;
+	color: inherit;
+	font-weight: normal;
+}
+
+a.ss-memoriam:hover {
+	text-decoration: underline;
+	color: #2a6099;
+}
+
+/* === Topic and forum titles === */
+h2.topic-title,
+h2.forum-title {
+	font-family: Verdana, Helvetica, Arial, sans-serif;
+	font-size: 1.5em;
+	font-weight: bold;
+}
+
+/* === Timezone text below footer navbar === */
+.ss-timezone {
+	text-align: right;
+	font-size: 0.85em;
+	color: #6b7585;
+	padding: 4px 10px;
+}
+
+/* === Hide PM export dropdown === */
+fieldset.display-actions .left-box {
+	display: none;
+}
+
+/* === Colored usernames should not be italic === */
+a.username-coloured em {
+	font-style: normal;
+}
+
+/* === Base font size bump and remove top padding === */
+body {
+	font-size: 12px;
+	padding-top: 0;
+}
+
+/* === Fix small pagination text and spacing === */
+.action-bar {
+	font-size: 1.1em;
+}
+
+.action-bar.bar-top {
+	margin-bottom: 16px;
+}
+
+/* === Pagination active page color === */
+.pagination li.active span {
+	background: #2a6099;
+	border-color: #2a6099;
+}
+
+/* === Color overrides to match 6502.org palette === */
+
+/* Primary link color: prosilver #368AD2 -> 6502.org #2a6099 */
+a,
+a:link,
+a:visited,
+.postlink {
+	color: #2a6099;
+}
+
+a:hover,
+a:active,
+.postlink:hover {
+	color: #3574b4;
+}
+
+/* Navbar background: prosilver bright blue -> 6502.org muted blue */
+.navbar {
+	background-color: #2a6099;
+	border: none;
+}
+
+.navbar .inner {
+	background-color: #2a6099;
+}
+
+/* Navbar links */
+.navbar a,
+.navbar a:link,
+.navbar a:visited {
+	color: #ffffff;
+}
+
+.navbar a:hover {
+	color: #e0ecf5;
+}
+
+.navbar li,
+.navbar .linklist li {
+	color: #ffffff;
+}
+
+#username_logged_in a,
+#username_logged_in .dropdown-trigger,
+.navbar .rightside a {
+	color: #ffffff !important;
+}
+
+/* Override colored usernames in the navbar so they're readable on dark background */
+.navbar .username-coloured {
+	color: #ffffff !important;
+}
+
+/* All navbar dropdowns: dark text on white background */
+.navbar .dropdown-contents,
+.navbar .dropdown-contents li,
+.navbar .dropdown-contents a,
+.navbar .dropdown-contents a:link,
+.navbar .dropdown-contents a:visited,
+.navbar .dropdown-contents p,
+.navbar .dropdown-contents span {
+	color: #2d3748 !important;
+}
+
+.navbar .dropdown-contents a:hover {
+	color: #2a6099 !important;
+}
+
+.navbar .dropdown-contents a:hover span {
+	text-decoration: underline;
+}
+
+/* Forum background/border areas */
+.forumbg {
+	background-color: #2a6099;
+	background-image: none;
+}
+
+.forabg {
+	background-color: #2a6099;
+	background-image: none;
+}
+
+/* Align category header text with navbar content */
+.forabg li.header dl.row-item dt .list-inner {
+	padding-left: 5px;
+}
+
+/* Hide redundant category from breadcrumbs */
+.breadcrumbs .crumb[data-forum-id="11"] {
+	display: none;
+}
+
+/* Extra spacing between announcements and topics in forum view */
+.forumbg.announcement {
+	margin-bottom: 9px;
+}
+
+/* Forum list rows - neutral instead of blue-tinted */
+ul.forums,
+ul.topiclist {
+	background-color: #f9fafb;
+	background-image: none;
+}
+
+/* Column headers (Topics, Posts, Last post) */
+ul.topiclist li.header,
+ul.forums li.header {
+	background-color: #2a6099;
+}
+
+ul.topiclist li.header dd,
+ul.topiclist li.header dt,
+ul.topiclist li.header a,
+ul.forums li.header dd,
+ul.forums li.header dt,
+ul.forums li.header a,
+li.header dd,
+li.header dt,
+li.header a,
+.panel-container .panel li.header dd,
+.panel-container .panel li.header dt,
+.panel-container .panel li.header a {
+	color: #ffffff;
+}
+
+.forabg .header a,
+.forumbg .header a {
+	color: #ffffff;
+}
+
+.forabg .header a:hover,
+.forumbg .header a:hover {
+	color: #e0ecf5;
+}
+
+/* Primary buttons */
+input.button1 {
+	background: #2a6099;
+	border-color: #1e4f7a;
+	color: #ffffff;
+}
+
+input.button1:hover {
+	background: #3574b4;
+}
+
+/* Secondary buttons - keep readable on any background */
+input.button2 {
+	background: #e0ecf5;
+	border-color: #2a6099;
+	color: #1e4f7a;
+}
+
+input.button2:hover {
+	background: #d0dfe9;
+}
+
+/* Dropdown styling */
+.dropdown .dropdown-contents {
+	border-color: #d5d9df;
+}
+
+/* Breadcrumbs */
+.nav-breadcrumbs .breadcrumbs,
+.nav-breadcrumbs .breadcrumbs .crumb,
+.nav-breadcrumbs .breadcrumbs .crumb:before {
+	color: #ffffff;
+}
+
+.nav-breadcrumbs .breadcrumbs a,
+.nav-breadcrumbs .breadcrumbs a:link,
+.nav-breadcrumbs .breadcrumbs a:visited {
+	color: #ffffff;
+}
+
+.nav-breadcrumbs .breadcrumbs a:hover {
+	color: #e0ecf5;
+}
+
+/* Alternating row backgrounds */
+.bg1 {
+	background-color: #f9fafb;
+}
+
+.bg2 {
+	background-color: #f0f2f4;
+}
+
+/* Visual separation between posts */
+.post {
+	border-bottom: 2px solid #d5d9df;
+}
+
+/* Page body background */
+#page-body {
+	background-color: #f4f5f7;
+}
+
+/* Wrap background */
+.wrap {
+	background-color: #ffffff;
+}
+
