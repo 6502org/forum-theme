@@ -539,6 +539,10 @@ input.button2:hover {
 	color: #e0ecf5;
 }
 
+.breadcrumbs .crumb:before {
+	content: '\203A';
+}       
+
 /* Alternating row backgrounds */
 .bg1 {
 	background-color: #f9fafb;
