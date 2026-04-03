@@ -69,6 +69,15 @@
 .sticky_unread_locked				{ background-image: url("./images/sticky_unread_locked.gif"); }
 .sticky_unread_locked_mine			{ background-image: url("./images/sticky_unread_locked_mine.gif"); }
 
+/* Match 6502.org main stie for shared header/nav/footer */
+.site-header, .site-header *,
+.site-nav, .site-nav *,
+.site-footer, .site-footer * {
+  box-sizing: border-box;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Verdana, Helvetica, Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+
 /* === 6502.org Site Header === */
 .site-header {
 	background: linear-gradient(135deg, #1e4f7a 0%, #2a6099 50%, #3574b4 100%);
@@ -79,6 +88,7 @@
 	box-shadow: 0 2px 8px rgba(0,0,0,0.12);
 	position: relative;
 	z-index: 10;
+	-webkit-font-smoothing: antialiased;
 }
 
 .site-header a {
@@ -124,6 +134,7 @@
 	font-weight: 400;
 	opacity: 0.8;
 	margin-top: 2px;
+	line-height: 1.6;
 }
 
 /* === 6502.org Site Navigation === */
@@ -136,6 +147,7 @@
 	font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Verdana, Helvetica, Arial, sans-serif;
 	-webkit-font-smoothing: antialiased;
 	font-size: 14px;
+	line-height: 1.6;
 }
 
 .site-nav .nav-title {
