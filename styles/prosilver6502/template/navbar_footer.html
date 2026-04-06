@@ -15,7 +15,7 @@
 			<!-- EVENT overall_footer_breadcrumb_prepend -->
 			{% apply spaceless %}
 			<span class="crumb">
-				<a href="{U_INDEX}" data-navbar-reference="index">
+				<a href="{% if U_INDEX ends with 'index.php' %}{{ U_INDEX|slice(0, -9) }}{% else %}{{ U_INDEX }}{% endif %}" data-navbar-reference="index">
 					<!-- IF not U_SITE_HOME --><i class="icon fa-home fa-fw" aria-hidden="true"></i><!-- ENDIF --><span>Forum Home</span>
 				</a>
 			</span>
