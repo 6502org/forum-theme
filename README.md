@@ -9,6 +9,7 @@ This is the custom phpBB 3.3 theme used by the [6502.org Forum](http://forum.650
 - Code blocks are formatted as 6502.org's modified "subsilver" theme had them
 - Links like "Show new posts" at top right added as "subsilver" had them
 - Top menu bar re-organized based on feedback from 6502.org forum users
+- Post view counts hidden because inflation from bot traffic makes them useless
 - Some features never used by 6502.org like multiple "forums" were removed
 - "In Memoriam" link added to posts from 6502.org members who have passed away
 
