@@ -628,3 +628,14 @@ input.button2:hover {
 .nojs .agreement-btn-agree {
 	display: none;
 }
+
+/* Fix avatar scaling on mobile (prosilver sets max-height: 32px) */
+@media (max-width: 700px) {
+	.postprofile .avatar img {
+		max-height: none !important;
+		width: auto !important;
+		height: auto !important;
+		max-width: 100%;
+		width: 100% !important;
+	}
+}
