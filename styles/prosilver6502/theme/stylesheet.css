@@ -569,3 +569,11 @@ input.button2:hover {
 	background-color: #ffffff;
 }
 
+/* Registration agreement text */
+.agreement,
+.agreement p,
+.agreement ul,
+.agreement li {
+	font-size: 14px;
+	line-height: 1.6;
+}
