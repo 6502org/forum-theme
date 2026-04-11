@@ -502,10 +502,13 @@ input.button1 {
 	background: #2a6099;
 	border-color: #1e4f7a;
 	color: #ffffff;
+	padding: 2px 6px;
 }
 
 input.button1:hover {
+	color: #ffffff;
 	background: #3574b4;
+	border-color: #2a6099;
 }
 
 /* Secondary buttons - keep readable on any background */
@@ -576,4 +579,52 @@ input.button2:hover {
 .agreement li {
 	font-size: 14px;
 	line-height: 1.6;
+}
+
+
+/* Agreement page buttons (both <a> elements for consistent cross-platform sizing) */
+.agreement-btn {
+	padding: 4px 8px;
+	font-family: "Lucida Grande", Verdana, Helvetica, Arial, sans-serif;
+	font-size: 1em;
+	text-decoration: none;
+	cursor: pointer;
+	display: inline-block;
+	border: 1px solid;
+}
+
+.agreement-btn-agree,
+.agreement-btn-agree:link,
+.agreement-btn-agree:visited {
+	background: #2a6099;
+	border-color: #1e4f7a;
+	color: #ffffff;
+}
+
+.agreement-btn-agree:hover,
+.agreement-btn-agree:active {
+	background: #3574b4;
+	color: #ffffff;
+	text-decoration: none;
+}
+
+.agreement-btn-decline,
+.agreement-btn-decline:link,
+.agreement-btn-decline:visited {
+	background: #e0ecf5;
+	border-color: #2a6099;
+	color: #1e4f7a;
+	text-decoration: none;
+}
+
+.agreement-btn-decline:hover,
+.agreement-btn-decline:active {
+	background: #d0dfe9;
+	color: #1e4f7a;
+	text-decoration: none;
+}
+
+/* Hide JS-dependent agreement buttons when JS is off */
+.nojs .agreement-btn-agree {
+	display: none;
 }
