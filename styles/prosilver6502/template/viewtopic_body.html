@@ -234,7 +234,7 @@
 
 		<!-- DEFINE $SHOW_POST_BUTTONS = (postrow.U_EDIT or postrow.U_DELETE or postrow.U_REPORT or postrow.U_WARN or postrow.U_INFO or postrow.U_QUOTE) -->
 		<!-- EVENT viewtopic_body_post_buttons_list_before -->
-		<!-- IF not S_IS_BOT -->
+		<!-- IF S_REGISTERED_USER and not S_IS_BOT -->
 			<!-- IF $SHOW_POST_BUTTONS -->
 				<ul class="post-buttons">
 										<!-- EVENT viewtopic_body_post_buttons_before -->
