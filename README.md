@@ -1,8 +1,8 @@
 # Forum Theme
 
-This is the custom phpBB 3.3 theme used by the [6502.org Forum](http://forum.6502.org).  It is based on phpBB's default "prosilver" theme.  The primary changes from "prosilver" are:
+This is the custom phpBB 3.3 theme used by the [6502.org Forum](https://6502.org/forum).  It is based on phpBB's default "prosilver" theme.  The primary changes from "prosilver" are:
 
-- Addition of the [6502.org](http://6502.org) header and footer
+- Addition of the [6502.org](https://6502.org) header and footer
 - Color and font changes throughout to match the 6502.org site
 - Post author's info is shown to the left of the post as "subsilver" did
 - Quote block style is more like "subsilver" was
