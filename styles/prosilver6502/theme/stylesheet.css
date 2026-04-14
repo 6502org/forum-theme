@@ -756,3 +756,10 @@ input.button2:hover {
 		display: none;
 	}
 }
+
+/* Avatar scaling on the change avatar page */
+.panel img.avatar {
+	width: 120px;
+	height: auto !important;
+	max-width: 100%;
+}
