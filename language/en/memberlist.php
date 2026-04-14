@@ -54,7 +54,7 @@ $lang = array_merge($lang, array(
 	'DEST_LANG'				=> 'Language',
 	'DEST_LANG_EXPLAIN'		=> 'Select an appropriate language (if available) for the recipient of this message.',
 
-	'EDIT_PROFILE'			=> 'Edit profile',
+	'EDIT_PROFILE'			=> 'Edit your profile',
 
 	'EMAIL_BODY_EXPLAIN'	=> 'This message will be sent as plain text, do not include any HTML or BBCode. The return address for this message will be set to your email address.',
 	'EMAIL_DISABLED'		=> 'Sorry but all email related functions have been disabled.',
@@ -145,7 +145,7 @@ $lang = array_merge($lang, array(
 	'USER_PRESENCE'			=> 'Board presence',
 	'USERS_PER_PAGE'		=> 'Users per page',
 
-	'VIEWING_PROFILE'		=> 'Viewing profile - %s',
+	'VIEWING_PROFILE'		=> '%s',
 	'VIEW_FACEBOOK_PROFILE'	=> 'View Facebook Profile',
 	'VIEW_SKYPE_PROFILE'	=> 'View Skype Profile',
 	'VIEW_TWITTER_PROFILE'	=> 'View Twitter Profile',
