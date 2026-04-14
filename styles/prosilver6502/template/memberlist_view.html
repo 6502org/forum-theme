@@ -8,15 +8,13 @@
 <div class="panel bg1<!-- IF S_ONLINE --> online<!-- ENDIF -->">
 	<div class="inner">
 
-	<!-- IF AVATAR_IMG -->
-		<dl class="left-box avatar-rank-container">
-			<dt class="profile-avatar"><!-- IF U_EDIT_SELF --><a href="{{ U_EDIT_SELF|replace({'profile_info': 'avatar'}) }}">{AVATAR_IMG}</a><!-- ELSE -->{AVATAR_IMG}<!-- ENDIF --></dt>
+	<dl class="left-box avatar-rank-container">
+			<dt class="profile-avatar"><!-- IF U_EDIT_SELF --><a href="{{ U_EDIT_SELF|replace({'profile_info': 'avatar'}) }}"><!-- IF AVATAR_IMG -->{AVATAR_IMG}<!-- ELSE --><img src="./styles/prosilver6502/theme/images/no_avatar.png" class="avatar" alt="" /><!-- ENDIF --></a><!-- ELSE --><!-- IF AVATAR_IMG -->{AVATAR_IMG}<!-- ELSE --><img src="./styles/prosilver6502/theme/images/no_avatar.png" class="avatar" alt="" /><!-- ENDIF --><!-- ENDIF --></dt>
 			<!-- EVENT memberlist_view_rank_avatar_before -->
 			<!-- IF RANK_TITLE --><dd style="text-align: center;">{RANK_TITLE}</dd><!-- ENDIF -->
 			<!-- IF RANK_IMG --><dd style="text-align: center;">{RANK_IMG}</dd><!-- ENDIF -->
 			<!-- EVENT memberlist_view_rank_avatar_after -->
 		</dl>
-	<!-- ENDIF -->
 
 	<dl class="left-box details profile-details">
 		<dt>{L_USERNAME}{L_COLON}</dt>

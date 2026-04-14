@@ -240,6 +240,17 @@
 	font-size: 1.08em;
 }
 
+.postprofile .has-avatar .avatar-container,
+.postprofile .no-avatar .avatar-container {
+	margin-bottom: 10px !important;
+}
+
+.postprofile .username,
+.postprofile .username-coloured {
+	font-size: 1.3em;
+	word-break: break-all;
+}
+
 /* === Post profile on the left side === */
 /* Float and border are set via inline style in the templates
    (viewtopic_body.html, ucp_pm_viewmessage.html) because
@@ -470,7 +481,7 @@ a:active,
 
 /* Extra spacing between announcements and topics in forum view */
 .forumbg.announcement {
-	margin-bottom: 9px;
+	margin-bottom: 10px;
 }
 
 /* Forum list rows - neutral instead of blue-tinted */
@@ -647,6 +658,16 @@ input.button2:hover {
 
 /* Fix avatar scaling on mobile (prosilver sets max-height: 32px) */
 @media (max-width: 700px) {
+	.postprofile .has-avatar .avatar-container,
+	.postprofile .no-avatar .avatar-container {
+		margin-bottom: 10px !important;
+		overflow: hidden;
+	}
+
+	.postprofile .avatar {
+		margin-right: 8px !important;
+	}
+
 	.postprofile .avatar img {
 		max-height: none !important;
 		width: auto !important;
