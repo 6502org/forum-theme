@@ -257,11 +257,24 @@
 	background-image: none !important;
 }
 
-/* Put it on the profile pane instead */
+/* Put it on the profile pane instead, as a pseudo-element so it layers on top */
 .online .postprofile {
+	position: relative;
+}
+
+.online .postprofile::after {
+	content: '';
+	position: absolute;
+	top: 0;
+	right: 0;
+	width: 60px;
+	height: 60px;
 	background-image: url("../../prosilver/theme/en/icon_user_online.gif");
 	background-position: right 0;
 	background-repeat: no-repeat;
+	background-size: contain;
+	z-index: 1;
+	pointer-events: none;
 }
 
 /* === Quote block: subsilver-style === */
