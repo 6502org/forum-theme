@@ -29,7 +29,7 @@
 		<dt class="<!-- IF RANK_TITLE or RANK_IMG -->has-profile-rank<!-- ELSE -->no-profile-rank<!-- ENDIF --> <!-- IF AUTHOR_AVATAR -->has-avatar<!-- ELSE -->no-avatar<!-- ENDIF -->">
 			<div class="avatar-container">
 				<!-- EVENT ucp_pm_viewmessage_avatar_before -->
-				<!-- IF AUTHOR_AVATAR --><a href="{U_MESSAGE_AUTHOR}" class="avatar">{AUTHOR_AVATAR}</a><!-- ENDIF -->
+				<!-- IF AUTHOR_AVATAR --><a href="{U_MESSAGE_AUTHOR}" class="avatar">{AUTHOR_AVATAR}</a><!-- ELSE --><a href="{U_MESSAGE_AUTHOR}" class="avatar"><img src="./styles/prosilver6502/theme/images/no_avatar.png" class="avatar" alt="" /></a><!-- ENDIF -->
 				<!-- EVENT ucp_pm_viewmessage_avatar_after -->
 			</div>
 			{% EVENT ucp_pm_viewmessage_author_full_before %}
