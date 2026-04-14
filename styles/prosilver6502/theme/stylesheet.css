@@ -652,10 +652,15 @@ input.button2:hover {
 	line-height: 1;
 	color: #2d3748;
 	border-radius: 6px;
+	outline: none;
 	position: absolute;
 	right: 16px;
-	top: 50%;
-	transform: translateY(-50%);
+	top: 10px;
+}
+
+.nav-toggle:focus {
+	outline: none;
+	box-shadow: none;
 }
 
 .nav-toggle:hover {
