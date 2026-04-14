@@ -713,3 +713,10 @@ input.button2:hover {
 		width: 100%;
 	}
 }
+
+/* Hide Search text on mobile to match Filter icon-only behavior */
+@media (max-width: 768px) {
+	#nav-main > li > a > .fa-search ~ span {
+		display: none;
+	}
+}
