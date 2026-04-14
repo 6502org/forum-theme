@@ -143,6 +143,7 @@
 .site-nav {
 	display: flex;
 	align-items: center;
+	position: relative;
 	padding: 0 20px;
 	background-color: #ffffff;
 	border-bottom: 1px solid #d5d9df;
@@ -637,5 +638,73 @@ input.button2:hover {
 		height: auto !important;
 		max-width: 100%;
 		width: 100% !important;
+	}
+}
+
+/* Site nav hamburger toggle (hidden on desktop) */
+.nav-toggle {
+	display: none;
+	background: none;
+	border: none;
+	cursor: pointer;
+	padding: 0;
+	font-size: 22px;
+	line-height: 1;
+	color: #2d3748;
+	border-radius: 6px;
+	position: absolute;
+	right: 16px;
+	top: 50%;
+	transform: translateY(-50%);
+}
+
+.nav-toggle:hover {
+	background-color: #f0f5fa;
+}
+
+/* Responsive site nav */
+@media (max-width: 768px) {
+	.site-header {
+		padding: 12px 16px;
+	}
+
+	.site-icon {
+		width: 40px;
+		height: 40px;
+	}
+
+	.site-header .site-title {
+		font-size: 22px;
+	}
+
+	.site-header .site-subtitle {
+		font-size: 12px;
+	}
+
+	.nav-toggle {
+		display: block;
+	}
+
+	.site-nav {
+		flex-wrap: wrap;
+		padding: 0 16px;
+	}
+
+	.site-nav .nav-links {
+		display: none;
+		width: 100%;
+		flex-direction: column;
+		gap: 0;
+		padding: 4px 0 8px;
+	}
+
+	.site-nav .nav-links.open {
+		display: flex;
+	}
+
+	.site-nav .nav-links a {
+		padding: 10px 8px;
+		border-radius: 0;
+		width: 100%;
 	}
 }

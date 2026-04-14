@@ -114,6 +114,23 @@
 
 <!-- EVENT overall_footer_body_after -->
 
+<!-- Site nav hamburger toggle -->
+<script>
+(function() {
+	var btn = document.querySelector('.nav-toggle');
+	if (btn) {
+		btn.onclick = function() {
+			var links = document.querySelector('.nav-links');
+			if (links.className.indexOf('open') !== -1) {
+				links.className = links.className.replace(' open', '');
+			} else {
+				links.className += ' open';
+			}
+		};
+	}
+})();
+</script>
+
 <!-- Override selectCode so clicking "Select all" again deselects -->
 <script>
 var _origSelectCode = selectCode;
