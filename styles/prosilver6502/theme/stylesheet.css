@@ -670,10 +670,8 @@ input.button2:hover {
 
 	.postprofile .avatar img {
 		max-height: none !important;
-		width: auto !important;
+		width: 80px !important;
 		height: auto !important;
-		max-width: 100%;
-		width: 100% !important;
 	}
 }
 
